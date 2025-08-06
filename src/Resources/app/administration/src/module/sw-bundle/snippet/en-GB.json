@@ -1,8 +1,8 @@
 {
   "sw-bundle": {
     "general": {
-      "mainMenuItemGeneral": "My Bundle Icon",
-      "descriptionTextModule": "Sidebar icon only"
+      "mainMenuItemGeneral": "Bundle Manager",
+      "descriptionTextModule": "Managing Bundles"
     }
   }
 }
