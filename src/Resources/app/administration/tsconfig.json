@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "module": "ESNext",        // or "CommonJS"
+    "target": "ES6",           // or higher
+    "moduleResolution": "Node",
+    "strict": true,
+    "allowJs": true
+  },
+  "include": ["src/**/*"]
+}

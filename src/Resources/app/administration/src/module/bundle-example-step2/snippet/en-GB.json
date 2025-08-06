@@ -1,0 +1,8 @@
+{
+  "bundle-example-step2": {
+    "general": {
+      "mainMenuItemGeneral": "My Bundle Icon",
+      "descriptionTextModule": "Sidebar icon only"
+    }
+  }
+}

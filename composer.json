@@ -1,0 +1,28 @@
+{
+    "name": "bundle-example-step2/bundle-example-step2",
+    "description": "bundle-example-step2/bundle-example-step2",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.7.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "BundleExampleStep2\\BundleExampleStep2",
+        "label": {
+            "de-DE": "Product Bundle",
+            "en-GB": "Product Bundle"
+        },
+        "shopware-plugin-administration-entrypoint": "Resources/app/administration/src/main.js"
+    },
+    "autoload": {
+        "psr-4": {
+            "BundleExampleStep2\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BundleExampleStep2\\Tests\\": "tests/"
+        }
+    }
+}
