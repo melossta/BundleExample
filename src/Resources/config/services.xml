@@ -17,6 +17,12 @@
         <service id="BundleExampleStep2\Core\Content\Product\ProductExtension">
             <tag name="shopware.entity.extension"/>
         </service>
+        <service id="BundleExampleStep2\Controller\AdminDispatchController" public="true">
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+            <argument id="event_dispatcher" type="service"/>
 
+        </service>
     </services>
 </container>

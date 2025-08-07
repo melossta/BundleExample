@@ -57,7 +57,7 @@ Shopware.Module.register('sw-bundle', {
             icon: 'regular-shopping-bag',
             path: 'sw.bundle.index',
             // ⛔ Removed parent!
-            position: 80, // You can tweak this for order in sidebar
+            position: 80,
             privilege: null
         }
     ]
