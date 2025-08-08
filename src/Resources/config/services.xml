@@ -24,5 +24,19 @@
             <argument id="event_dispatcher" type="service"/>
 
         </service>
+
+        <service id="BundleExampleStep2\Service\TestingService" public="true" />
+        <service id="BundleExampleStep2\Controller\Admin\TestingServiceController" public="true">
+            <call method="setContainer">
+                <argument id="service_container" type="service"/>
+            </call>
+            <argument type="service" id="BundleExampleStep2\Service\TestingService"/>
+        </service>
+        <service id="BundleExampleStep2\Service\TestingServiceDecorator"
+                 decorates="BundleExampleStep2\Service\TestingService"
+                 decoration-inner-name="BundleExampleStep2\Service\TestingService.inner"
+                 public="true">
+            <argument type="service" id="BundleExampleStep2\Service\TestingService.inner" />
+        </service>
     </services>
 </container>
